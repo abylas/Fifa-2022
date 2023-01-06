@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4006e149-9407-435d-a584-dda0ffda498e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fifa2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fifa2.py" beforeDir="false" afterPath="$PROJECT_DIR$/fifa2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -61,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672972985431</updated>
       <workItem from="1672972988929" duration="1268000" />
-      <workItem from="1673038399774" duration="240000" />
+      <workItem from="1673038399774" duration="1644000" />
     </task>
     <servers />
   </component>
