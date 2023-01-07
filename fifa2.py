@@ -95,3 +95,38 @@ df_fixture.to_csv('fifa_worldcup_fixture.csv', index=False)
 
 #  3 - 1.get_tables_groupstage.ipynb
 
+# extracting all tables in website
+all_tables = pd.read_html('https://en.wikipedia.org/wiki/2022_FIFA_World_Cup')
+# finding tables in group stage
+all_tables[11]
+all_tables[18]
+all_tables[25]
+
+# A -> H
+# 11 -> 7*8 + 11 = 67
+all_tables = pd.read_html('https://en.wikipedia.org/wiki/2022_FIFA_World_Cup')
+for i in range(11,67,7): # 11 18 25
+    print(i)
+    df = all_tables[i]
+    df.rename(columns={df.columns[1]:'Team'}, inplace=True)
+    df.pop('Qualification')
+#     print(df)
+
+
+print(alphabet)
+
+all_tables = pd.read_html('https://en.wikipedia.org/wiki/2022_FIFA_World_Cup')
+
+dict_table = {}
+for letter, i in zip(alphabet, range(11,67,7)): # A=11, B=18, ...
+    df = all_tables[i]
+    df.rename(columns={df.columns[1]:'Team'}, inplace=True)
+    df.pop('Qualification')
+    dict_table[f'Group {letter}'] = df
+dict_table.keys()
+
+dict_table['Group H']
+
+# Upload (..verify if uploaded correctly)
+with open('dict_table', 'wb') as output:
+    pickle.dump(dict_table, output)
