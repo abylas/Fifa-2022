@@ -109,7 +109,11 @@ for i in range(11,67,7): # 11 18 25
     print(i)
     df = all_tables[i]
     df.rename(columns={df.columns[1]:'Team'}, inplace=True)
-    df.pop('Qualification')
+
+    # deleting this to avoid the error being raised since quaifitcation is not there in page anymore
+    # df.pop('Qualification')
+
+
 #     print(df)
 
 
@@ -121,7 +125,9 @@ dict_table = {}
 for letter, i in zip(alphabet, range(11,67,7)): # A=11, B=18, ...
     df = all_tables[i]
     df.rename(columns={df.columns[1]:'Team'}, inplace=True)
-    df.pop('Qualification')
+    # deleting this to avoid the error being raised since quaifitcation is not there in page anymore
+
+    # df.pop('Qualification')
     dict_table[f'Group {letter}'] = df
 dict_table.keys()
 
